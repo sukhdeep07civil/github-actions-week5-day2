@@ -36,8 +36,8 @@ jobs:
 
     - name: Build Images
       run: | 
-        docker build -t ssm0712/github-actions-week5-day2:${{ github.sha }}
-        docker build -t ssm0712/github-actions-week5-day2:latest
+        docker build -t ssm0712/github-actions-week5-day2:${{ github.sha }} .
+        docker build -t ssm0712/github-actions-week5-day2:latest .
     
     - name: Push Images
       run: |
